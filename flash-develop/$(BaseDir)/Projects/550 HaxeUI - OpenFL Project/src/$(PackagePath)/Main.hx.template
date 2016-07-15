@@ -17,7 +17,7 @@ class Main {
          *     main.ready();
          *     Lib.current.stage.addChild(main);
          * 
-         *  Note: this is something that will happen automatically in later releases
+         *  Note: the call to .ready() is something that will happen automatically in later releases
          */
         
         Screen.instance.addComponent(main);
