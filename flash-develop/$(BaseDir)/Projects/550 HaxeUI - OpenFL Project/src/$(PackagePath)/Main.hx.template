@@ -1,0 +1,32 @@
+package $(PackageName);
+
+import haxe.ui.Toolkit;
+import haxe.ui.components.Button;
+import haxe.ui.core.Component;
+import haxe.ui.core.Screen;
+import haxe.ui.macros.ComponentMacros;
+
+class Main {
+	public static function main() {
+		Toolkit.init();
+		
+        var main:Component = ComponentMacros.buildComponent("assets/ui/main.xml");
+        /*
+         * We are using 'Screen.instance.addComponent' as its more cross framework,
+         * however, would could have also used Lib.current.stage.addChild after calling 
+         * .ready() on the component, eg:
+         * 
+         *     main.ready();
+         *     Lib.current.stage.addChild(main);
+         * 
+         *  Note: this is something that will happen automatically in later releases
+         */
+        
+        Screen.instance.addComponent(main);
+        
+        var button:Button = main.findComponent("testButton2", null, true);
+        button.onClick = function(e) {
+            button.text = "Set from code!";
+        }
+	}
+}
