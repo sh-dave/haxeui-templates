@@ -3,7 +3,7 @@
 </p>
 
 <h2>haxeui-templates</h2>
-haxeui-templates provides a set of templates to quickly and easily create haxeui projects for use with different IDEs. The templates are split up by IDE and haxeui ´backend`
+haxeui-templates provides a set of templates to quickly and easily create haxeui projects for use with different IDEs. The templates are split up by IDE and haxeui `backend`
 
 <h3>Flash Develop</h3>
 All Flash Develop templates for all backends are kept in a single `haxeui-templates.fdz` (_flash develop zip_) file. This file can be downloaded <a href="https://github.com/haxeui/haxeui-templates/raw/master/flash-develop/haxeui-templates.fdz">here</a>. 
