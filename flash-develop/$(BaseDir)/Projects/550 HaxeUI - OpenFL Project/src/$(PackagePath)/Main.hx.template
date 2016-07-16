@@ -1,3 +1,5 @@
+package $(PackageName);
+
 import haxe.ui.Toolkit;
 import haxe.ui.components.Button;
 import haxe.ui.core.Component;
