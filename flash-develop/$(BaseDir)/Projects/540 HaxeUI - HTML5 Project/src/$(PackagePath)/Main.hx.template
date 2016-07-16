@@ -8,6 +8,8 @@ import haxe.ui.macros.ComponentMacros;
 
 class Main {
     public static function main() {
+        // Uncomment this line to use native components where possible (ie, a hybrid user interface)
+        // Tookit.theme = "native";
         Toolkit.init();
 
         var main:Component = ComponentMacros.buildComponent("assets/ui/main.xml");
