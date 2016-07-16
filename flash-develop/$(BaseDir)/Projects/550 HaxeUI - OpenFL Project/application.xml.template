@@ -19,8 +19,4 @@
 	<assets path="assets/css" rename="css" />
 	<assets path="assets/fonts" rename="fonts" />
 	<assets path="assets/ui" rename="ui" />
-
-	<!-- optimize output
-	<haxeflag name="-dce std" /> -->
-
 </project>
