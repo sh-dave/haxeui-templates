@@ -15,15 +15,15 @@ import haxe.ui.macros.ComponentMacros;
 class Main {
     public static function main() {
         Toolkit.init();
-		
+
         var main:Component = ComponentMacros.buildComponent("assets/ui/main.xml");
         /*
          * We are using 'Screen.instance.addComponent' as its more cross framework,
          * however, would could have also used 'Lib.current.stage.addChild'
          */
-        
+
         Screen.instance.addComponent(main);
-        
+
         var button:Button = main.findComponent("testButton2", null, true);
         button.onClick = function(e) {
             button.text = "Set from code!";

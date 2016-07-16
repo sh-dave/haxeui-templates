@@ -4,6 +4,6 @@
 }
 
 .big-button {
-	font-size: 30px;
+    font-size: 30px;
     width: 250px;
 }
