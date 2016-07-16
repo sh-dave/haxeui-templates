@@ -14,7 +14,10 @@ class Main {
 
         /*
          * We are using 'Screen.instance.addComponent' as its more cross framework,
-         * however, would could have also used 'Lib.current.stage.addChild'
+         * however, would could have also used 'js.Browser.document.body.appendChild'
+         * to append the components .element attribute. eg:
+         * 
+         * js.Browser.document.body.appendChild(main.element);
          */
         Screen.instance.addComponent(main);
 
