@@ -1,11 +1,11 @@
 # Basic information about the game.
 name: $(ProjectID)
-description: 
+description:
 
 # Information about the game developer.
 developer:
-  name: 
-  url: 
+  name:
+  url:
 
 # The game's unique identifier.
 id: $(ProjectID)
