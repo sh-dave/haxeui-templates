@@ -15,8 +15,8 @@ Once downloaded, this file can simply be double clicked on to install the templa
 Currently the Flash Develop .zip file (`haxeui-templates.fdz`) contains the following backend templates (some templates are still in progress and not available yet):
 
  - [ ] haxeui-all
- - [X] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/550%20HaxeUI%20-%20OpenFL%20Project">haxeui-openfl</a>
- - [ ] haxeui-flambe
+ - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/550%20HaxeUI%20-%20OpenFL%20Project">haxeui-openfl</a>
+ - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/560%20HaxeUI%20-%20Flambe%20Project">haxeui-flambe</a>
  - [ ] haxeui-kha
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/540%20HaxeUI%20-%20HTML5%20Project">haxeui-html5</a>
  - [ ] haxeui-pixijs
