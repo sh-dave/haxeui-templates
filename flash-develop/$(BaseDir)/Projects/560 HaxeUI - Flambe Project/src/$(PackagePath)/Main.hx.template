@@ -1,0 +1,51 @@
+package $(PackageName);
+
+import flambe.Entity;
+import flambe.System;
+import flambe.asset.AssetPack;
+import flambe.asset.Manifest;
+import flambe.display.FillSprite;
+import haxe.ui.Toolkit;
+import haxe.ui.components.Button;
+import haxe.ui.core.Component;
+import haxe.ui.core.Screen;
+import haxe.ui.macros.ComponentMacros;
+
+class Main {
+    public static function main() {
+        // Wind up all platform-specific stuff
+        System.init();
+        
+        // Load up the compiled pack in the assets directory named "bootstrap"
+        var manifest = Manifest.fromAssets("bootstrap");
+        var loader = System.loadAssetPack(manifest);
+        loader.get(onAssetsLoaded);
+        
+    }
+    
+    private static function onAssetsLoaded(pack:AssetPack) {
+        Toolkit.init( {
+           assetPack: pack // let the toolkit know which asset pack we are using
+        });
+        
+        // create a white background (optional)
+        var background = new FillSprite(0xFFFFFF, System.stage.width, System.stage.height);
+        System.root.addChild(new Entity().add(background));
+        
+        // add the UI
+        var main:Component = ComponentMacros.buildComponent("assets/ui/main.xml");
+
+        /*
+         * We are using 'Screen.instance.addComponent' as its more cross framework,
+         * however, would could have also used 'System.root.addChild'. eg:
+         *
+         * System.root.addChild(new Entity().add(main));
+         */
+        Screen.instance.addComponent(main);
+
+        var button:Button = main.findComponent("testButton2", null, true);
+        button.onClick = function(e) {
+            button.text = "Set from code!";
+        }
+    }
+}
