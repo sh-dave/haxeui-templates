@@ -48,10 +48,10 @@ class Main {
         options.resolution = 1;
 
         // uncomment this line to auto detect the pixi renderer
-        //_renderer = Detector.autoDetectRenderer(width, height, options);
+        //_renderer = Detector.autoDetectRenderer(800, 600, options);
 		
         // uncomment this line to force the webgl renderer
-        //_renderer = new WebGLRenderer(width, height, options);
+        //_renderer = new WebGLRenderer(800, 600, options);
         
 		_renderer = new CanvasRenderer(800, 600, options);
         
