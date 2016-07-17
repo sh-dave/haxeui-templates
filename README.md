@@ -19,7 +19,7 @@ Currently the Flash Develop .zip file (`haxeui-templates.fdz`) contains the foll
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/560%20HaxeUI%20-%20Flambe%20Project">haxeui-flambe</a>
  - [ ] haxeui-kha
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/540%20HaxeUI%20-%20HTML5%20Project">haxeui-html5</a>
- - [ ] haxeui-pixijs
+ - [ ] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/570%20HaxeUI%20-%20PixiJS%20Project">haxeui-pixijs</a>
  - [ ] haxeui-nme
  - [ ] haxeui-luke
  - [ ] haxeui-hxwidgets
