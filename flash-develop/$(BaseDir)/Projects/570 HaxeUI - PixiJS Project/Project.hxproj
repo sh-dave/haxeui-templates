@@ -30,7 +30,7 @@
   <haxelib>
     <library name="pixijs" />
     <library name="haxeui-core" />
-    <library name="haxeui-pixi" />
+    <library name="haxeui-pixijs" />
     <library name="hscript" />
     <library name="actuate" />
   </haxelib>
