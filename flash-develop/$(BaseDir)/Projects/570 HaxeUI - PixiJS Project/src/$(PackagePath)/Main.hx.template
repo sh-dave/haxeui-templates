@@ -1,0 +1,66 @@
+package $(PackageName);
+
+import haxe.ui.Toolkit;
+import haxe.ui.components.Button;
+import haxe.ui.core.Component;
+import haxe.ui.core.Screen;
+import haxe.ui.macros.ComponentMacros;
+import js.Browser;
+import pixi.core.graphics.Graphics;
+import pixi.core.renderers.Detector.RenderingOptions;
+import pixi.core.renderers.SystemRenderer;
+import pixi.core.renderers.canvas.CanvasRenderer;
+
+class Main {
+    private static var _renderer:SystemRenderer;
+    private static var _stage:Graphics;
+
+    public static function main() {
+        initPixi();
+        
+        Toolkit.init({
+			stage: _stage,
+			renderer: _renderer
+        });
+
+        var main:Component = ComponentMacros.buildComponent("assets/ui/main.xml");
+
+        /*
+         * We are using 'Screen.instance.addComponent' as its more cross framework,
+         * however, would could have also used '_stage.addChild'
+         */
+        Screen.instance.addComponent(main);
+
+        var button:Button = main.findComponent("testButton2", null, true);
+        button.onClick = function(e) {
+            button.text = "Set from code!";
+        }
+    }
+    
+    private static function initPixi() {
+		_stage = new Graphics();
+		_stage.beginFill(0xFFFFFF);
+		_stage.drawRect(0, 0, 800, 600);
+		_stage.endFill();
+        
+        var options:RenderingOptions = {};
+        options.backgroundColor = 0xFFFFFF;
+        options.resolution = 1;
+
+        // uncomment this line to auto detect the pixi renderer
+        //_renderer = Detector.autoDetectRenderer(width, height, options);
+		
+        // uncomment this line to force the webgl renderer
+        //_renderer = new WebGLRenderer(width, height, options);
+        
+		_renderer = new CanvasRenderer(800, 600, options);
+        
+        Browser.document.body.appendChild(_renderer.view);
+        Browser.window.requestAnimationFrame(cast _render);
+    }
+    
+    private static function _render() {
+        Browser.window.requestAnimationFrame(cast _render);
+        _renderer.render(_stage);
+    }
+}
