@@ -17,10 +17,10 @@ class Main {
 
     public static function main() {
         initPixi();
-        
+
         Toolkit.init({
-			stage: _stage,
-			renderer: _renderer
+            stage: _stage,
+            renderer: _renderer
         });
 
         var main:Component = ComponentMacros.buildComponent("assets/ui/main.xml");
@@ -36,29 +36,29 @@ class Main {
             button.text = "Set from code!";
         }
     }
-    
+
     private static function initPixi() {
-		_stage = new Graphics();
-		_stage.beginFill(0xFFFFFF);
-		_stage.drawRect(0, 0, 800, 600);
-		_stage.endFill();
-        
+        _stage = new Graphics();
+        _stage.beginFill(0xFFFFFF);
+        _stage.drawRect(0, 0, 800, 600);
+        _stage.endFill();
+
         var options:RenderingOptions = {};
         options.backgroundColor = 0xFFFFFF;
         options.resolution = 1;
 
         // uncomment this line to auto detect the pixi renderer
         //_renderer = Detector.autoDetectRenderer(800, 600, options);
-		
+
         // uncomment this line to force the webgl renderer
         //_renderer = new WebGLRenderer(800, 600, options);
-        
-		_renderer = new CanvasRenderer(800, 600, options);
-        
+
+        _renderer = new CanvasRenderer(800, 600, options);
+
         Browser.document.body.appendChild(_renderer.view);
         Browser.window.requestAnimationFrame(cast _render);
     }
-    
+
     private static function _render() {
         Browser.window.requestAnimationFrame(cast _render);
         _renderer.render(_stage);
