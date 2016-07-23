@@ -2,16 +2,16 @@
 <project version="2">
   <!-- Output SWF options -->
   <output>
-    <movie outputType="Application" />
+    <movie outputType="CustomBuild" />
     <movie input="" />
-    <movie path="application.xml" />
+    <movie path="project.nmml" />
     <movie fps="60" />
     <movie width="800" />
     <movie height="600" />
-    <movie version="3" />
+    <movie version="0" />
     <movie minorVersion="0" />
-    <movie platform="NME" />
-    <movie background="FFFFFF" />
+    <movie platform="Custom" />
+    <movie background="#FFFFFF" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
@@ -27,6 +27,8 @@
   </build>
   <!-- haxelib libraries -->
   <haxelib>
+    <library name="haxeui-core" />
+    <library name="haxeui-nme" />
   </haxelib>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
@@ -41,14 +43,14 @@
     <hidden path="obj" />
   </hiddenPaths>
   <!-- Executed before build -->
-  <preBuildCommand />
+  <preBuildCommand>"$(CompilerPath)/haxelib" run nme build "$(OutputFile)" $(TargetBuild) -$(BuildConfig) -Dfdb</preBuildCommand>
   <!-- Executed after build -->
   <postBuildCommand alwaysRun="False" />
   <!-- Other project options -->
   <options>
     <option showHiddenPaths="False" />
     <option testMovie="Custom" />
-    <option testMovieCommand="" />
+    <option testMovieCommand="&quot;$(CompilerPath)/haxelib&quot; run nme test &quot;$(OutputFile)&quot; $(TargetBuild) -$(BuildConfig) -Dfdb" />
   </options>
   <!-- Plugin storage -->
   <storage />
