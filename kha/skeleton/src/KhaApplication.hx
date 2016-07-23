@@ -12,10 +12,10 @@ import kha.System;
 
 class KhaApplication {
     private var _main:Component;
-    
-	public function new() {
+
+    public function new() {
         Assets.loadEverything(onAssetsLoaded);
-	}
+    }
 
     function onAssetsLoaded() {
         Toolkit.init();
@@ -26,21 +26,21 @@ class KhaApplication {
         button.onClick = function(e) {
             button.text = "Set from code!";
         }
-        
+
         System.notifyOnRender(render);
         Scheduler.addTimeTask(update, 0, 1 / 60);
     }
-    
-	function update(): Void {
-		
-	}
 
-	function render(framebuffer:Framebuffer): Void {		
+    function update(): Void {
+
+    }
+
+    function render(framebuffer:Framebuffer): Void {
         var g = framebuffer.g2;
         g.begin(true, 0xFFFFFF);
-        
+
         Screen.instance.renderTo(g);
-        
+
         g.end();
-	}
+    }
 }
