@@ -7,24 +7,24 @@ import haxe.ui.core.Screen;
 import haxe.ui.macros.ComponentMacros;
 
 class Main extends luxe.Game {
-	public override function ready() {
+    public override function ready() {
         Luxe.renderer.clear_color = new luxe.Color().rgb(0xFFFFFF);
-        
+
         Toolkit.init();
         var main:Component = ComponentMacros.buildComponent("assets/ui/main.xml");
         Screen.instance.addComponent(main);
-        
+
         var button:Button = main.findComponent("testButton2", null, true);
             button.onClick = function(e) {
             button.text = "Set from code!";
         }
-	}
+    }
 
-	public override function onkeyup(e:luxe.Input.KeyEvent) {
-		if(e.keycode == luxe.Input.Key.escape)
-			Luxe.shutdown();
-	}
+    public override function onkeyup(e:luxe.Input.KeyEvent) {
+        if(e.keycode == luxe.Input.Key.escape)
+            Luxe.shutdown();
+    }
 
-	public override function update(dt:Float) {
-	}
+    public override function update(dt:Float) {
+    }
 }
