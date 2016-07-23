@@ -2,7 +2,7 @@
   <img src="https://dl.dropboxusercontent.com/u/26678671/haxeui2-warning.png"/>
 </p>
 
-<a href="https://www.patreon.com/haxeui"><img src="https://dl.dropboxusercontent.com/u/26678671/patreon_button.png" title="Support this project on Patreon!"/></a>
+[![Support this project on Patreon](https://dl.dropboxusercontent.com/u/26678671/patreon_button.png)](https://www.patreon.com/haxeui)
 
 <h2>haxeui-templates</h2>
 haxeui-templates provides a set of templates to quickly and easily create haxeui projects for use with different IDEs. The templates are split up by IDE and haxeui `backend`.
