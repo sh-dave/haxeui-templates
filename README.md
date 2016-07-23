@@ -30,4 +30,4 @@ Kha uses a tool called `khamake` to generate project files for various IDEs base
 haxelib run kha html5
 ```
 
-To build the project files for the kha HTML5 renderer.
+To build the project files for the Kha HTML5 renderer.
