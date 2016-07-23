@@ -17,9 +17,17 @@ Currently the Flash Develop .zip file (`haxeui-templates.fdz`) contains the foll
  - [ ] haxeui-all
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/550%20HaxeUI%20-%20OpenFL%20Project">haxeui-openfl</a>
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/560%20HaxeUI%20-%20Flambe%20Project">haxeui-flambe</a>
- - [ ] haxeui-kha
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/540%20HaxeUI%20-%20HTML5%20Project">haxeui-html5</a>
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/570%20HaxeUI%20-%20PixiJS%20Project">haxeui-pixijs</a>
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/580%20HaxeUI%20-%20NME%20Project">haxeui-nme</a>
  - [ ] haxeui-luxe
  - [ ] haxeui-hxwidgets
+
+<h3>Kha</h3>
+Kha uses a tool called `khamake` to generate project files for various IDEs based on a `khafile.js`, a zipped skeleton project has been provided <a href="https://github.com/haxeui/haxeui-templates/blob/master/kha/skeleton.zip?raw=true">here</a> which contains a basic HaxeUI application. Once the archive has been downloaded and extracted simply navigate to the expanded directory and use:
+
+```
+haxelib run kha html5
+```
+
+To build the project files for the kha HTML5 renderer.
