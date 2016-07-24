@@ -21,7 +21,7 @@ Currently the Flash Develop .zip file (`haxeui-templates.fdz`) contains the foll
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/570%20HaxeUI%20-%20PixiJS%20Project">haxeui-pixijs</a>
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/580%20HaxeUI%20-%20NME%20Project">haxeui-nme</a>
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/590%20HaxeUI%20-%20Luxe%20Project">haxeui-luxe</a>
- - [ ] haxeui-hxwidgets
+ - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/600%20HaxeUI%20-%20hxWidgets%20Project">haxeui-hxwidgets</a>
 
 <h3>Kha</h3>
 Kha uses a tool called `khamake` to generate project files for various IDEs based on a `khafile.js`, a zipped skeleton project has been provided <a href="https://github.com/haxeui/haxeui-templates/blob/master/kha/skeleton.zip?raw=true">here</a> which contains a basic HaxeUI application. Once the archive has been downloaded and extracted simply navigate to the expanded directory and use:
