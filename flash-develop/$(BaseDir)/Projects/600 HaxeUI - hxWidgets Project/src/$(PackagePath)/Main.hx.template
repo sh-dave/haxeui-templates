@@ -9,20 +9,20 @@ import hx.widgets.App;
 import hx.widgets.Frame;
 
 class Main {
-	static function main() {
-		var app = new App();
+    static function main() {
+        var app = new App();
         app.init();
-        
+
         var frame:Frame = new Frame(null, "$(ProjectName)");
         frame.resize(800, 600);
 
         Toolkit.init({
             frame: frame
         });
-        
+
         var main:Component = ComponentMacros.buildComponent("assets/ui/main.xml");
         Screen.instance.addComponent(main);
-        
+
         var button:Button = main.findComponent("testButton2", null, true);
         button.onClick = function(e) {
             button.text = "Set from code!";
@@ -32,5 +32,5 @@ class Main {
         frame.show();
         app.run();
         app.exit();
-	}
+    }
 }
