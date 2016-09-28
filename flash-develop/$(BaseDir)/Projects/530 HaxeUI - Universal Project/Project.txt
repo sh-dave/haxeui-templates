@@ -1,1 +1,0 @@
-An empty HaxeUI project using the HTML5 backend
