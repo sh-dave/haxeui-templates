@@ -1,4 +1,5 @@
-var project = new Project('$(ProjectID)');
+let project = new Project('$(ProjectID)');
+
 project.addAssets('../assets/**');
 project.addSources('../src');
 
@@ -6,4 +7,4 @@ project.addLibrary('haxeui-core');
 project.addLibrary('haxeui-kha');
 project.addLibrary('hscript');
 
-return project;
+resolve(project);

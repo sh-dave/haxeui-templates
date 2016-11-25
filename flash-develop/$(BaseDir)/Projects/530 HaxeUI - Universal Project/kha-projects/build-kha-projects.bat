@@ -1,2 +1,2 @@
-haxelib run kha html5
+node Kha/make html5
 pause
