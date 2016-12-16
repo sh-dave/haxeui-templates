@@ -4,7 +4,7 @@
     <app main="$(PackageDot)Main" file="$(ProjectID)" path="build/openfl" />
 
     <window background="#FFFFFF" fps="60" />
-    <window width="800" height="600" unless="mobile" />
+    <window width="800" height="600" if="desktop" />
 
     <!-- classpath, haxe libs -->
     <source path="src" />
