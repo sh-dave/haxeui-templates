@@ -1,0 +1,11 @@
+-cp src
+-main Main.hx
+
+-lib haxeui-core
+-lib haxeui-pixijs
+-lib pixijs
+-lib hscript
+
+-debug
+
+-js build/pixijs/test.js

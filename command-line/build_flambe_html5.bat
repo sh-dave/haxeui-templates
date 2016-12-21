@@ -1,0 +1,1 @@
+flambe build html --debug && start http://localhost:7000/?flambe=html && flambe serve

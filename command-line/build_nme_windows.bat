@@ -1,0 +1,1 @@
+nme test windows -debug

@@ -1,0 +1,1 @@
+openfl test application.xml neko -debug

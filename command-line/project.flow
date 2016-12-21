@@ -1,0 +1,28 @@
+{
+  "project": {
+    "name":     "Test",
+    "version":  "1.0.0",
+    "author":   "aW4KeNiNG",
+
+    "app": {
+      "name":       "Test",
+      "package":    "com.test",
+      "main":       "Main",
+      "output":     "build/luxe/"
+    },
+
+    "build": {
+      "dependencies": {
+        "luxe":         "*",
+        "hscript":      "*",
+        "haxeui-core":  "*",
+        "haxeui-luxe":  "*"
+      }
+    },
+
+    "files": {
+      "config": "config.json",
+      "assets": "assets/"
+    }
+  }
+}

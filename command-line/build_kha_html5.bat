@@ -1,0 +1,1 @@
+kha html5 --to ./build/kha && start http://localhost:2000/build/kha/html5/ && nekotools server

@@ -1,0 +1,10 @@
+-cp src
+-main Main.hx
+
+-lib haxeui-core
+-lib haxeui-xwt
+-lib hscript
+
+-debug
+
+-cs build/xwt
