@@ -11,20 +11,20 @@ class Main {
     public static function main() {
         Toolkit.theme = "native";
         var app = new HaxeUIApp();
-        app.ready(function() {        
+        app.ready(function() {
             #if kha
             var main:Component = ComponentMacros.buildComponent("../assets/ui/main.xml");
             #else
             var main:Component = ComponentMacros.buildComponent("assets/ui/main.xml");
             #end
-            
+
             app.addComponent(main);
 
             var button:Button = main.findComponent("testButton2", null, true);
             button.onClick = function(e) {
                 button.text = "Set from code!";
             }
-            
+
             app.start();
         });
     }
