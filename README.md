@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="https://dl.dropboxusercontent.com/u/26678671/haxeui2-warning.png"/>
+  <img src="http://haxeui.org/db/haxeui2-warning.png"/>
 </p>
 
-[![Support this project on Patreon](https://dl.dropboxusercontent.com/u/26678671/patreon_button.png)](https://www.patreon.com/haxeui)
+[![Support this project on Patreon](http://haxeui.org/db/patreon_button.png)](https://www.patreon.com/haxeui)
 
-<h2>haxeui-templates</h2>
+# haxeui-templates
 haxeui-templates provides a set of templates to quickly and easily create haxeui projects for use with different IDEs. The templates are split up by IDE and haxeui `backend`.
 
-<h3>Flash Develop</h3>
+## Flash Develop
 All Flash Develop templates for all backends are kept in a single `haxeui-templates.fdz` (_flash develop zip_) file. This file can be downloaded <a href="https://github.com/haxeui/haxeui-templates/raw/master/flash-develop/haxeui-templates.fdz">here</a>. 
 
 Once downloaded, this file can simply be double clicked on to install the templates into Flash Develop. These templates will then become available under a "HaxeUI" heading when a new project is created.
@@ -23,7 +23,7 @@ Currently the Flash Develop .zip file (`haxeui-templates.fdz`) contains the foll
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/590%20HaxeUI%20-%20Luxe%20Project">haxeui-luxe</a>
  - [x] <a href="https://github.com/haxeui/haxeui-templates/tree/master/flash-develop/%24(BaseDir)/Projects/600%20HaxeUI%20-%20hxWidgets%20Project">haxeui-hxwidgets</a>
 
-<h3>Kha</h3>
+## Kha
 Kha uses a tool called `khamake` to generate project files for various IDEs based on a `khafile.js`, a zipped skeleton project has been provided <a href="https://github.com/haxeui/haxeui-templates/blob/master/kha/skeleton.zip?raw=true">here</a> which contains a basic HaxeUI application. Once the archive has been downloaded and extracted simply navigate to the expanded directory and use:
 
 ```
