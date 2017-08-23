@@ -1,7 +1,7 @@
 let project = new Project('$(ProjectID)');
 
-project.addAssets('../assets/**');
-project.addSources('../src');
+project.addAssets('./assets/**');
+project.addSources('./src');
 
 project.addLibrary('haxeui-core');
 project.addLibrary('haxeui-kha');
