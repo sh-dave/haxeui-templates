@@ -1,5 +1,7 @@
 let project = new Project('HaxeUIApp');
 
+project.addParameter('-dce full');
+
 project.addAssets('assets/**');
 project.addSources('src');
 
